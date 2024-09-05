@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Style Css -->
+    <style>
+      .jumbotron {
+        padding-top: 3rem ;
+      }
+      .font {
+        text-shadow: 0 0 20px white;
+        text-transform: uppercase;
+      }
+      .font:hover {
+        color: rgb(179, 179, 179);
+        text-shadow: 0 0 20px rgb(179, 179, 179) ;
+      }
+      .about {
+        transform: translateY(-5px);
+      }
+      svg {
+        transform: translateY(5px);
+      }
+    .gambar {
+      animation: awal 2s ease-in-out  1 ;
+    }
+    .judul {
+      animation: awal 1.5s ease-in-out  1 ;
+    }
+    .lead {
+      animation: awal 1s ease-in-out  1 ;
+    }
+    @keyframes awal {
+      0% {
+        transform: translateY(-100px);
+        opacity: 0;
+      } 100% {
+        transform: translateY(0px);
+        opacity: 1;
+      }
+      
+    }
+    </style>
+</head>
+<body id="body">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm fixed-top">
+    <div class="container">
+      <a class="navbar-brand font" href="">Portofolio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#body">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  </nav>
+  <section class="jumbotron text-center mt-5 ">
+    <img src="img/2b.png" alt="" width="150px" class="gambar rounded-circle">
+    <h1 class="judul display-4">Muf</h1>
+    <p class="lead">Student | Digital Creator</p>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#212529" fill-opacity="1" d="M0,320L0,128L360,128L360,224L720,224L720,160L1080,160L1080,32L1440,32L1440,320L1080,320L1080,320L720,320L720,320L360,320L360,320L0,320L0,320Z"></path></svg>
+  </section>
+  <section class="about bg-dark text-white" id="about">
+    <div class="container-md">
+    <div class="row ">
+      <div class="col-md text-center ">
+        <h1>About Me</h1>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      
+      <div class="col-md-4">
+        <h4>Indonesia</h4>
+        <p>Hanya manusia biasa yang senang terhadap dunia programming dan editing</p>
+      </div>
+      <div class="col-md-4">
+        <h4>english</h4>
+        <p>Just ordinary people who love the world of programming and editing</p>
+      </div>
+    </div>
+  </div>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,0L0,288L288,288L288,224L576,224L576,224L864,224L864,160L1152,160L1152,224L1440,224L1440,320L1152,320L1152,320L864,320L864,320L576,320L576,320L288,320L288,320L0,320L0,320Z"></path></svg>
+  </section>
+  <section id="contact">
+    <div class="container-md">
+      <div class="row justify-content-center">
+        <h1 class="text-center">Contacts</h1>
+        <div class="col-6">
+          
+          <form>
+            <div class="mb-3">
+              <label for="Nama" class="form-label">Name</label>
+              <input type="text" class="form-control" id="Nama" >
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">comment</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+              <button type="submit" class="btn btn-dark">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#212529" fill-opacity="1" d="M0,32L0,320L288,320L288,192L576,192L576,256L864,256L864,192L1152,192L1152,256L1440,256L1440,320L1152,320L1152,320L864,320L864,320L576,320L576,320L288,320L288,320L0,320L0,320Z"></path></svg>
+  </section>
+  <div class="container-fluid">
+    <div class="row bg-dark text-white text-center">
+      <div class="col p-5">
+        <h4>Just ordinary People <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person-hearts" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M11.5 1.246c.832-.855 2.913.642 0 2.566-2.913-1.924-.832-3.421 0-2.566ZM9 5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm-9 8c0 1 1 1 1 1h10s1 0 1-1-1-4-6-4-6 3-6 4Zm13.5-8.09c1.387-1.425 4.855 1.07 0 4.277-4.854-3.207-1.387-5.702 0-4.276ZM15 2.165c.555-.57 1.942.428 0 1.711-1.942-1.283-.555-2.281 0-1.71Z"/>
+        </svg></h4> 
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>  
+</body>
+</html>
